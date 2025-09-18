@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Measuring Units</title>
+
+    <!-- external and internal CSS -->
+    <link rel="stylesheet" href="styles.css" media="all">
+    <style>
+        textarea {
+            border: none;
+            padding: 5px;
+
+        }
+    </style>
+
+    <!-- external and internal JavaScript -->
+    <script src="scripts.js" defer></script>
+    <script>
+        // in-page JavaScript here
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Code Log 2: CSS Measuring Units</h1>
+    <p>
+    <h2>Difference between absolute and relative CSS length units</h2>
+    <p>
+        Absolute length units have fixed values, so a length defined with them will always appear at that exact size on
+        whichever screen you are viewing off of. They are not always ideal since display sizes can vary greatly, (like
+        phones vs. monitor screens vs. iPads vs.
+        smart watches) but they work well when the output medium
+        is known, such as in print layouts.
+    </p>
+    <p>
+        Relative length units, on the other hand, are defined in relation to another length property. They adapt more
+        effectively across different devices and rendering environments.
+    </p>
+
+    <h2>Examples:</h2>
+    <p>
+    <ol>
+        <li>px, pt</li>
+        <ul>
+            <li>A px (pixel) is a relative unit based on the resolution of the viewing device. It represents a single
+                dot on the screen, but because screens vary in density, the actual size of a pixel may differ between
+                devices. A pt (point) is an absolute unit traditionally used in print design, where 1 pt equals 1/72 of
+                an inch. While points are consistent in print, their appearance can vary on screens.</li>
+        </ul>
+        <li>em, rem</li>
+        <ul>
+            <li>Both em and rem are relative units tied to font size. One em equals the font size of the element it is
+                used in, so it scales relative to its parent’s size. This can cause compounding effects if multiple
+                nested elements use em. A rem (root em), by contrast, always refers to the font size of the root
+                element, ensuring more consistent scaling throughout a page.</li>
+        </ul>
+        <li>cap, ex, ch</li>
+        <ul>
+            <li>These units are based on typography rather than the screen or viewport. cap measures the height of
+                capital letters in a font. ex measures the height of lowercase letters, specifically the letter "x,"
+                which often defines the font’s x-height. ch is based on the width of the "0" character (zero) in the
+                chosen font. These units are great for layouts where text alignment and readability are the focus, since
+                they scale with the font itself.</li>
+        </ul>
+    </ol>
+    </p>
+    </p>
+
+</body>
+
+</html>
