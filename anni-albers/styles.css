@@ -127,9 +127,14 @@ p.callout {
 }
 #secondLayout #callout3 {
     padding-left: 0;
+    text-align: left;
+    float: left;
 }
 #secondLayout #callout4 {
     padding-left: 0;
+    text-align: left;
+    float: left;
+
 }
 
 #secondLayout section h1 {
