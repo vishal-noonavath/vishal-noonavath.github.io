@@ -94,6 +94,7 @@ p.callout {
         'c4 c4 c4 p10 p10 p10'
         '. p11 p11 p11 . .'
 
+
 }
 
 /* assigning grid area names to DOM elements */
@@ -125,12 +126,12 @@ p.callout {
 #secondLayout #callout2 {
     padding-left: 0;
 }
-#callout3 {
+#secondLayout #callout3.callout {
     padding-left: 0;
     text-align: left;
     float: left;
 }
-#callout4 {
+#secondLayout #callout4.callout {
     padding-left: 0;
     text-align: left;
     float: left;
@@ -141,7 +142,7 @@ p.callout {
     padding-top: 70vh;
 }
 
-#secondLayout #biorow h2{
+#secondLayout section #biorow h2{
     font-size: 2.5rem;
 }
 
