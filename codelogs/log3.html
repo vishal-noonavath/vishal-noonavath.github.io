@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Measuring Units</title>
+
+    <!-- external and internal CSS -->
+    <link rel="stylesheet" href="styles.css" media="all">
+    <style>
+        textarea {
+            border: none;
+            padding: 5px;
+
+        }
+    </style>
+
+    <!-- external and internal JavaScript -->
+    <script src="scripts.js" defer></script>
+    <script>
+        // in-page JavaScript here
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Code Log 3: CSS Media Queries</h1>
+
+        <h2>How does a CSS media query work, and why is it useful?</h2>
+
+        <p>
+            A CSS media query allows you to apply specific CSS styles based on the type of device you're viewing it from, such as the width, height, orientation, or resolution. It works like a conditional statement in CSS: if the media query condition is true, then the styles inside it will be applied.
+        </p>
+
+        <p>
+            This is an example of responsive web design as it helps your code adapt its layout to different devices without needing multiple versions of the same webpage. This way, it ensures that viewers have an similar/optimal viewing experience regardless of how they view the webpage.
+        </p>
+
+        <p>
+            For example:
+            <pre>
+            @media screen and (max-width: 600px) {
+                body {
+                    background-color: lightgray;
+                }
+            }
+            </pre>
+        </p>
+
+        <p>
+            In the example, the background color will only change to light gray if the screen width is 600 pixels or less. This is an example of how you can implement flexible design adjustments based on device width.
+        </p>
+
+        <h2>What "media features" are supported by media queries, and what do they do?</h2>
+        <p>
+            Media features are the conditions that media queries check to determine whether to apply certain CSS rules. Some examples include <code>min-height</code>, <code>min-width</code>, <code>orientation</code>, <code>resolution</code>, and <code>hover</code>. 
+            
+            Here are some examples:
+        </p>
+
+        <ol>
+            <li><strong>min-height</strong></li>
+            <ul>
+                <li>
+                    This feature applies styles when the browser’s viewport height is greater than or equal to the specified value. It’s useful for ensuring that certain layouts or elements adjust when the vertical space on the screen increases.
+                </li>
+                <li>
+                    Example: <code>@media (min-height: 700px)</code> applies styles only when the viewport height is 700 pixels
+                    or taller.
+                </li>
+            </ul>
+
+            <li><strong>min-width</strong></li>
+            <ul>
+                <li>
+                    The opposite of <code>max-width</code>, this feature applies styles when the viewport width is greater than or equal to the specified value. It’s commonly used for larger screens, such as tablets or desktops.
+                </li>
+                <li>
+                    Example: <code>@media (min-width: 1024px)</code> targets screens that are at least 1024 pixels wide.
+                </li>
+            </ul>
+
+            <li><strong>orientation</strong></li>
+            <ul>
+                <li>
+                    This feature checks whether a device is in portrait (taller than wide) or landscape (wider than tall) mode. It’s often used for mobile and tablet layouts that change when a user rotates their device.
+                </li>
+                <li>
+                    Example: <code>@media (orientation: landscape)</code> applies styles only when the device is held horizontally.
+                </li>
+            </ul>
+
+            <li><strong>resolution</strong></li>
+            <ul>
+                <li>
+                    This feature detects the pixel density of a screen, allowing developers to serve higher-quality images or sharper visuals to high-resolution displays like retina display on mac devices.
+                </li>
+                <li>
+                    Example: <code>@media (min-resolution: 2dppx)</code> applies styles to screens with a pixel density of 2 or higher.
+                </li>
+            </ul>
+        </ol>
+
+        <p>
+            CSS media queries are an essential part of responsive design, enabling developers to create accessible, and user-friendly websites that adjust seamlessly across all devices and screen sizes.
+        </p>
+
+</body>
+
+</html>
