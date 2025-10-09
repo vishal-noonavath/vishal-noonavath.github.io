@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color</title>
+
+    <!-- external and internal CSS -->
+    <link rel="stylesheet" href="styles.css" media="all">
+    <style>
+        textarea {
+            border: none;
+            padding: 5px;
+        }
+      
+        .example {
+            color: white;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .named {
+            background-color: teal;
+        }
+
+        .hex {
+            background-color: #ff6347;
+        }
+
+        .rgb {
+            background-color: rgb(60, 179, 113);
+        }
+
+        .hsl {
+            background-color: hsl(210, 100%, 50%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Code Log 4: CSS Color</h1>
+
+    <h2>How CSS Uses Color</h2>
+        <p>
+            In CSS, you can use color to control the visual appearance of specified sections of text, backgrounds, and borders on a webpage. Below are some ways in which you can implement color in CSS: 
+        </p>
+
+
+    <h2>CSS Color Properties</h2>
+        <ol>
+            <li><strong>color</strong> — Defines the color of the text inside an element.<br>
+            Example: <code>color: blue;</code> changes the text color to blue.
+            </li>
+
+            <li><strong>background-color</strong> — Sets the background color of an element’s content area.<br>
+            Example: <code>background-color: lightgray;</code> fills the element’s background with light gray.
+            </li>
+
+            <li><strong>border-color</strong> — Determines the color of an element’s border.<br>
+            Example: <code>border-color: black;</code> makes the border black.
+            </li>
+        </ol>
+
+    <h2>CSS Color Values</h2>
+        <p>Here are some examples of defining colors:</p>
+
+        <ol>
+            <li><strong>Named Colors:</strong> Use predefined names such as <code>teal</code> or <code>navy</code>.
+                <div class="example named">Named color example: <code>background-color: teal</code> </div>
+            </li>
+
+            <li><strong>Hexadecimal Colors:</strong> Represented with a # followed by six digits (0–9, A–F).
+                Example: <code>#ff6347</code> for tomato red.
+                <div class="example hex">Hex color example: <code>background-color: #ff6347</code></div>
+            </li>
+
+            <li><strong>RGB Colors:</strong> Defined by mixing red, green, and blue light values (0–255).
+                Example: <code>rgb(60, 179, 113)</code> for medium sea green.
+                <div class="example rgb">RGB color example: <code>background-color: rgb(60, 179, 113)</code></div>
+            </li>
+
+            <li><strong>HSL Colors:</strong> Defined using hue, saturation, and lightness percentages.
+                Example: <code>hsl(210, 100%, 50%)</code> for bright blue.
+                <div class="example hsl">HSL color example: <code>background-color: hsl(210, 100%, 50%)</code></div>
+            </li>
+        </ol>
+
+</body>
+
+</html>
