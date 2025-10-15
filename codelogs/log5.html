@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .image-example {
+            width: 200px;
+            height: 150px;
+            background-image: url('https://i.pinimg.com/736x/6c/bb/36/6cbb36a34afe45944dc1280aed5f9c0c.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 10px 0;
+            border: 1px solid;
+        }
+
+        img {
+            width: 200px;
+            height: 150px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Code Log 5: Images</h1>
+
+    <h2>Using Images in HTML and CSS</h2>
+    <p>
+        Images can be displayed on webpages either directly in the HTML using the <code>&lt;img&gt;</code> tag or by
+        setting them as "backgrounds" through CSS using the <code>background-image</code> property. Each method serves
+        different purposes in terms of visual design and code structure design.
+    </p>
+
+    <h2>HTML vs. CSS Image Usage</h2>
+    <p>
+        The <code>&lt;img&gt;</code> tag is used to insert an image directly into the HTML content. It is part of the
+        document structure and can include attributes like <code>src</code>, <code>alt</code>, and <code>width</code>.
+        For example:
+    </p>
+
+    <code>&lt;img src="image.jpg" alt="Example image"&gt;</code>
+    <br>
+    <img src="https://i.pinimg.com/736x/6c/bb/36/6cbb36a34afe45944dc1280aed5f9c0c.jpg" alt="Example image">
+
+    <p>
+        In contrast, <code>background-image</code> is used in CSS to apply an image as a decorative or background
+        element. It does not appear in the HTML structure and cannot use attributes like <code>alt</code>, making it
+        less accessible for screen readers. For example:
+    </p>
+
+    <code>background-image: url('image.jpg');</code>
+    <div class="image-example"></div>
+
+    <p>
+        HTML images are ideal for content-related visuals like product photos or infographics, while background images
+        are used for design purposes like banners. In both examples, the output is essentially the same, however, the
+        background image doesn't contain an <code>alt</code> attribute. It would be better to use an html image in this
+        particular case since it increases accessibility should the image not load. There would be no indication of a
+        missing image if the background image didn't load.
+    </p>
+
+    <h2>CSS Properties for Background Images</h2>
+    <p>
+        Beyond <code>background-image</code>, there are several CSS properties to control how background images appear
+        on the webpage. Two common ones are:
+    </p>
+    <ol>
+        <li><strong>background-size</strong> - This determines how a background image is scaled within its container.
+            Example: <code>background-size: cover;</code> makes the image cover the entire element area.
+        </li>
+        <li><strong>background-position</strong> - Defines where the image is placed inside the element.
+            Example: <code>background-position: center;</code> centers the image in the element.
+        </li>
+    </ol>
+
+    <h2>Dimensions vs. Resolution</h2>
+    <p>
+        Dimensions refer to an image’s physical width and height in pixels, while resolution describes the image’s level
+        of detail, typically measured in pixels per inch or dots per inch (PPI or DPI). DPI/PPI matter for print but on
+        the web, what matters most is pixel dimensions.
+    </p>
+
+    <h2>Image File Formats</h2>
+    <p>
+        <strong>GIF</strong> supports animation and transparency but is limited to 256 colors, making it best for simple
+        graphics or logos.<br>
+        <strong>PNG</strong> offers lossless compression and transparency, ideal for high-quality web graphics.<br>
+        <strong>JPG/JPEG</strong> uses lossy compression, reducing file size but potentially lowering quality; it’s best
+        for photographs.<br>
+        <strong>WebP</strong> combines quality and compression efficiency, providing smaller file sizes with strong
+        visual quality.<br>
+        <strong>SVG</strong> is vector-based, meaning it scales without losing quality, making it ideal for icons and
+        logos.
+    </p>
+
+</body>
+
+</html>
