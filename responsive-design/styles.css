@@ -1,0 +1,117 @@
+/* MOBILE FIRST DESIGN */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d47d7d;
+  color: #000000;
+  line-height: 1.5;
+}
+
+/* Header Layout */
+.recipe-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #d47d7d;
+  padding: 1em;
+}
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.recipe-title {
+  margin-top: 1em;
+}
+
+.recipe-title h1 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.time-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  border: 1px solid #000000;
+  background: #dfafaf;
+  padding: 0.5em;
+  border-radius: 8px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* Ingredients, Equipment, and Instructions */
+.recipe-details {
+  background: white;
+  margin: 1em;
+  padding: 1.5em;
+  border-radius: 8px;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.3em;
+}
+
+.instructions {
+  margin-top: 2em;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media screen and (min-width: 768px) {
+
+  .recipe-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 2em;
+    padding: 2em;
+  }
+
+  .recipe-image {
+    width: 45%;
+    height: auto;
+  }
+
+  .recipe-title {
+    width: 45%;
+  }
+
+  .recipe-title h1 {
+    font-size: 2em;
+  }
+
+  .time-info {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .columns {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .ingredients, .equipment {
+    width: 48%;
+  }
+}
