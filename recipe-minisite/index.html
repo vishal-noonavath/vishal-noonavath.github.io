@@ -1,62 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <!-- meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Mini-Site Home Page</title>
+    <!-- external and internal CSS -->
+    <link rel="stylesheet" href="styles.css" media="all">
 
-	<!-- meta tags and title -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Responsive Menu Demo</title>
-
-	<!-- external and internal CSS -->
-	<link rel="stylesheet" href="styles.css" media="all">
-
-	<!-- external and internal JavaScript -->
-	<!-- file renamed to "scripts.js" (plural) after the demo -->
-	<script src="scripts.js" defer></script>
-
+    <!-- external and internal JavaScript -->
+    <!-- file renamed to "scripts.js" (plural) after the demo -->
+    <script src="scripts.js" defer></script>
 </head>
 
 <body>
+    <!-- NAV MENU -->
+    <nav>
+        <a id="navBurger">&#9776;</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">My Recipes</a>
+                <ul>
+                    <li><a href="recipe1.html">Triple Chocolate Cookies</a></li>
+                    <li><a href="recipe2.html">Red Velvet Cake</a></li>
+                    <li><a href="recipe3.html">Pumpkin Pie</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Favorite Recipe Sites</a>
+                <ul>
+                    <li><a href="https://www.allrecipes.com" target="_blank">AllRecipes</a></li>
+                    <li><a href="https://tasty.co" target="_blank">Tasty</a></li>
+                    <li><a href="https://www.bonappetit.com" target="_blank">Bon Appétit</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
-	<nav>
-		<a id="navBurger">&#9776;</a>
+    <main class="home">
+        <section class="hero">
+            <img src="homepage.jpg" alt="Sweets in a Display" class="hero-image">
+            <div class="hero-text">
+                <h1>Welcome to Vishal’s Recipe Collection</h1>
+                <p>Explore my favorite homemade sweet treat recipes! Every recipe here is simple, delicious, and easy to
+                    follow.</p>
+                <p>Also, check out my favorite recipe websites if you want more recipes!</p>
+            </div>
+        </section>
 
-		<ul>
-			<li><a href="#">My Favorite News Sites</a>
-				<ul>
-					<li><a href="https://arstechnica.com">Ars Technica</a></li>
-					<li><a href="#">Submenu One B</a></li>
-					<li><a href="#">Submenu One C</a></li>
-				</ul>
-			</li>
-
-			<li><a href="#">Menu Item Two</a>
-				<ul>
-					<li><a href="#">Submenu Two A</a></li>
-					<li><a href="#">Submenu Two B</a></li>
-					<li><a href="#">Submenu Two C</a></li>
-					<li><a href="#">Submenu Two D</a></li>
-					<li><a href="#">Submenu Two E</a></li>
-				</ul>
-			</li>
-
-			<li><a href="#">Menu Item Three</a>
-				<ul>
-					<li><a href="#">Submenu Three A</a></li>
-					<li><a href="#">Submenu Three B</a></li>
-				</ul>
-			</li>
-
-		</ul>
-
-	</nav>
-
-	<main>
-		<h1>Some content goes here</h1>
-		<p>Eventually this will be something useful.</p>
-	</main>
-
+        <section class="recipe-links">
+            <h2>Featured Recipes</h2>
+            <div class="recipe-grid">
+                <a href="recipe1.html" class="recipe-card">
+                    <img src="triplechoc.jpg" alt="Triple Chocolate Cookies">
+                    <h3>Triple Chocolate Cookies</h3>
+                </a>
+                <a href="recipe2.html" class="recipe-card">
+                    <img src="redvelvet.jpg" alt="Red Velvet Cake">
+                    <h3>Red Velvet Cake</h3>
+                </a>
+                <a href="recipe3.html" class="recipe-card">
+                    <img src="pumpkinpie.jpg" alt="Pumpkin Pie">
+                    <h3>Pumpkin Pie</h3>
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
