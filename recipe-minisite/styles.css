@@ -2,11 +2,11 @@
 :root {
   --nav-height: 60px;
   --nav-bkgd-color: #5c3523;           /* Chocolate brown */
-  --nav-text-color: #fff8f3;           /* Warm off-white */
+  --nav-text-color: #f0c5c5;           /* Warm off-white */
   --nav-hover-bkgd-color: #a24030;     /* Red velvet accent */
   --nav-hover-text-color: #ffffff;     /* Pure white on hover */
-  --page-bkgd: #faf7f4;                /* Light cream */
-  --card-bkgd: #fff;                   /* White cards */
+  --page-bkgd: #e7cdb0;                /* Light cream */
+  --card-bkgd: #ffffff;                   /* White cards */
   --primary-text: #2b1d15;             /* Deep brown */
   --accent-color: #c13c3c;             /* Red velvet accent */
 }
