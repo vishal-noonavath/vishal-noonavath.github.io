@@ -35,6 +35,7 @@ header {
     width: 100vw;
     height: 100vh;
     z-index: 1;
+    transition: background-color 1.0s ease;
 }
 
 #rhodieTitle h1 {
@@ -137,6 +138,11 @@ body.darkMode main {
 
 body.darkMode .plant-details {
     background-color: #333333cc;
+}
+
+body.darkMode #rhodieTitle {
+    background-color: #1a1a1a;
+    transition: background-color 1.0s ease;
 }
 
 body.darkMode #rhodieTitle h1 {
