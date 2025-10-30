@@ -17,6 +17,7 @@ header {
     width: 100vw;
     height: 100vh;
     position: relative;
+    transition: background-color 1.0s ease, color 1.0s ease;
 }
 
 #rhodiePicture {
@@ -43,6 +44,7 @@ header {
     color: white;
     font-size: 2.5em;
     width: calc(100vw - 2em);
+    transition: color 1.0s ease;
 }
 
 /* Dark mode toggle button styling */
@@ -139,6 +141,7 @@ body.darkMode .plant-details {
 
 body.darkMode #rhodieTitle h1 {
     color: #ff8bcf;
+    transition: color 1.0s ease;
 }
 
 body.darkMode #toggleDarkMode {
