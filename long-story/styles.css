@@ -37,7 +37,6 @@ section {
 section > .content {
   position: absolute;
   width: 100%;
-  bottom: 3rem;
   left: 0;
   padding: 1rem;
   text-align: center;
@@ -45,7 +44,7 @@ section > .content {
   font-size: 2rem;
 }
 
-/* Apply background images */
+/* Background Images */
 #section1 { background-image: url('images/intro.jpg'); }
 #section2 { background-image: url('images/stream.jpg'); }
 #section3 { background-image: url('images/storm.jpg'); }
