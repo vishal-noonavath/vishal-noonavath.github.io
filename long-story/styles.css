@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.borderOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 7rem solid #45a4ed;
+}
+
+section > .content {
+  position: absolute;
+  width: 100%;
+  bottom: 3rem;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+/* Apply background images */
+#section1 { background-image: url('images/intro.jpg'); }
+#section2 { background-image: url('images/stream.jpg'); }
+#section3 { background-image: url('images/storm.jpg'); }
+#section4 { background-image: url('images/ocean.jpg'); }
+#section5 { background-image: url('images/message.jpg'); }
