@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bonsai Styles</title>
+    <title>Tools & Materials</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -27,26 +27,30 @@
         </nav>
     </header>
 
+
     <main>
         <section class="content-block">
-            <h2>Traditional Bonsai Forms</h2>
-            <p>Bonsai styling is influenced by how trees grow in the wild. Each style reflects the natural environment, wind
-                direction, and the age of the tree. Styles create harmony and structure within the composition.</p>
+            <h1>Tools & Materials</h1>
+            <p>The essential tools and materials used in bonsai cultivation.</p>
+        </section>
+        
+        <section class="content-block">
+            <h2>Basic Tools</h2>
+            <p>Beginner-friendly tools such as pruning shears, wire cutters, and basic shaping wire.</p>
         </section>
 
 
         <section class="content-block">
-            <h3>Common Bonsai Styles</h3>
-            <ul>
-                <li>Formal Upright (Chokkan)</li>
-                <li>Informal Upright (Moyogi)</li>
-                <li>Slanting (Shakan)</li>
-                <li>Cascade (Kengai)</li>
-                <li>Forest Planting (Yose-ue)</li>
-            </ul>
+            <h2>Advanced Tools</h2>
+            <p>Specialized tools including branch cutters, jin pliers, and precision trimming scissors.</p>
+        </section>
+
+
+        <section class="content-block">
+            <h2>Soils & Pots</h2>
+            <p>A brief overview of bonsai soil mixes, pot shapes, and how they affect growth.</p>
         </section>
     </main>
-
 </body>
 
 </html>
