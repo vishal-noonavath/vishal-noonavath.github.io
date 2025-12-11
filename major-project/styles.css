@@ -1,3 +1,4 @@
+/* Reset and base styles */
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@ body {
     color: #222;
 }
 
+/* Header */
 header {
     background: #d8e3d0;
     padding: 20px;
@@ -13,31 +15,17 @@ header {
     position: relative;
 }
 
-/* ----------- DESKTOP NAV BAR ------------- */
+/* Navbar container */
 .navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
-.nav-links {
-    list-style: none;
-    padding: 0;
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #2a4028;
-    font-weight: bold;
-}
-
-/* ---------------- HAMBURGER NAV BUTTON --------- */
+/* Hamburger button — always visible */
 .nav-toggle {
-    display: none;
+    display: block;
     background: none;
     border: none;
     cursor: pointer;
@@ -55,26 +43,29 @@ header {
     border-radius: 2px;
 }
 
-/* -------------- MOBILE STYLES ----------------- */
-@media (max-width: 800px) {
+/* Navigation links — hidden by default */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: none;
+    flex-direction: column;
+    background: #d8e3d0;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 6px;
+}
 
-    .nav-toggle {
-        display: block;
-    }
+/* Show menu when button is toggled */
+.nav-links.show {
+    display: flex;
+}
 
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: #d8e3d0;
-        padding: 20px;
-        gap: 15px;
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
+.nav-links a {
+    text-decoration: none;
+    color: #2a4028;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 main {
@@ -93,11 +84,4 @@ main {
 .hero {
     text-align: center;
     margin-bottom: 40px;
-}
-
-footer {
-    background: #d8e3d0;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
 }
