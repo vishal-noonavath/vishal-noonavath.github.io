@@ -6,13 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events & Exhibitions</title>
     <link rel="stylesheet" href="styles.css">
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', () => {
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+            navToggle.setAttribute('aria-expanded', !expanded);
+            navLinks.classList.toggle('show');
+        });
+    </script>
+    
 </head>
 
 <body>
     <header>
-        <h1>Bonsai Styles</h1>
-        <nav>
-            <ul>
+        <h1>How to Bonsai</h1>
+
+        <nav class="navbar">
+            <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="basics.html">Bonsai Basics</a></li>
                 <li><a href="styling.html">Styles</a></li>
@@ -25,6 +44,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        
     </header>
         
         
