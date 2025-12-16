@@ -20,6 +20,39 @@
         });
     </script>
 
+    <style>
+        /* Gallery-specific styles */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(61, 47, 31, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-caption {
+            padding: 15px;
+            font-size: 0.95em;
+            color: #3d2f1f;
+        }
+    </style>
 </head>
 
 <body>
@@ -50,21 +83,63 @@
 
 
     <main>
+        <!-- Intro -->
+        <section class="hero">
+            <h2>Bonsai Gallery</h2>
+            <p>
+                This gallery highlights different bonsai trees, styles, and moments throughout my journey.
+                Each image represents patience, growth, and the evolving relationship between caretaker and tree.
+            </p>
+        </section>
+
+        <!-- Gallery Grid -->
         <section class="content-block">
-            <h1>Gallery</h1>
-            <p>A collection of bonsai images showcasing different styles and stages of growth.</p>
-        </section>
+            <div class="gallery-grid">
 
-        <section class="content-block">
-            <h2>Featured Trees</h2>
-            <p>Highlights of notable bonsai specimens to inspire new artists.</p>
-        </section>
+                <div class="gallery-item">
+                    <img src="images/gallery-juniper.jpg" alt="Juniper bonsai with wired branches">
+                    <div class="gallery-caption">
+                        Juniper bonsai after decades of styling.
+                    </div>
+                </div>
 
-        <section class="content-block">  
-            <h2>Development Stages</h2>
-            <p>Images showing how bonsai evolve through years of training.</p>
-        </section>
+                <div class="gallery-item">
+                    <img src="images/gallery-ficus.jpg" alt="Ficus bonsai indoors near window">
+                    <div class="gallery-caption">
+                        Ficus bonsai with aerial roots.
+                    </div>
+                </div>
 
+                <div class="gallery-item">
+                    <img src="images/gallery-elm.jpg" alt="Chinese elm bonsai with dense foliage">
+                    <div class="gallery-caption">
+                        Chinese elm showcasing dense foliage growth.
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/gallery-tools.jpg" alt="Bonsai tools beside a tree">
+                    <div class="gallery-caption">
+                        Wide selection of tools.
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/gallery-pots.jpg" alt="Bonsai repotting process">
+                    <div class="gallery-caption">
+                        Large variety of bonsai pots.
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/gallery-outdoor.jpg" alt="Outdoor bonsai display">
+                    <div class="gallery-caption">
+                        Outdoor bonsai arranged for sunlight exposure.
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
 </body>
 
