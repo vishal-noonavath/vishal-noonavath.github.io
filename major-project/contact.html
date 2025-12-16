@@ -20,6 +20,54 @@
         });
     </script>
 
+    <style>
+        /* Contact Form Styles */
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-info p {
+            font-size: 1em;
+            margin: 8px 0;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-form button {
+            padding: 12px;
+            background-color: #4a6741;
+            color: #f5f0e8;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #6b8e63;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -50,19 +98,28 @@
 
 
     <main>
-        <section class="content-block">
-            <h1>Contact</h1>
-            <p>Get in touch with questions or collaboration ideas.</p>
+        <section class="hero">
+            <h2>Contact Me</h2>
+            <p>If you have questions, suggestions, or just want to connect, feel free to reach out!</p>
         </section>
 
-        <section class="content-block">
-            <h2>Message Form</h2>
-            <p>Contact form here for visitors to reach out directly.</p>
+        <!-- Contact Info -->
+        <section class="content-block contact-info">
+            <h2>Reach Me At</h2>
+            <p><strong>Email:</strong> <a href="mailto:vishal.noonavath@wsu.edu">vishal.noonavath@wsu.edu</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+14252098312">425-209-8312</a></p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/vishal.noonavath" target="_blank">@vishal.noonavath</a></p>
         </section>
 
+        <!-- Contact Form -->
         <section class="content-block">
-            <h2>Social Media</h2>
-            <p>Section for my social media links</p>
+            <h2>Send a Message</h2>
+            <form class="contact-form" action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
 </body>
